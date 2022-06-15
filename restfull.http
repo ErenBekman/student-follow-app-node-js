@@ -1,0 +1,131 @@
+@URL = http://localhost:3021
+
+###
+POST {{ URL }}/api/students
+Content-Type: application/json
+
+{
+    "name":"ayse kaya",
+    "address":"istanbul / zeytinburnu",
+    "phone_no":55546523518,
+    "class_no":2
+}
+
+###
+POST {{ URL }}/api/students
+Content-Type: application/json
+
+{
+    "name":"aymet aydin",
+    "address":"istanbul / maslak",
+    "phone_no":55546523518,
+    "class_no":11
+}
+
+###
+POST {{ URL }}/api/parents
+Content-Type: application/json
+
+{
+    "full_name":"ekrem arslan",
+    "parent_phone":5452142561,
+    "wp_no":5452142561
+    
+}
+
+###
+POST {{ URL }}/api/parents
+Content-Type: application/json
+
+{
+    "full_name":"mustafa bekman",
+    "parent_phone":5452142561,
+    "wp_no":5452142561
+    
+}
+
+###
+POST {{ URL }}/api/schools
+Content-Type: application/json
+
+{
+    "school_name":"Basaksehir Lisesi",
+    "student_sum":22
+}
+
+###
+
+
+POST {{ URL }}/api/services
+Content-Type: application/json
+
+{
+    "car_no":33
+}
+
+
+###
+GET {{ URL }}/api/students
+
+###
+GET {{ URL }}/api/students/62a8db16364309e4145a3edf
+
+
+
+###
+PATCH  {{ URL }}/api/students/61e94dd8091e9757d3bb01d2
+Content-Type: application/json
+
+{
+    "name": "erenn"
+}
+
+###
+DELETE {{ URL }}/api/students/61e94dd8091e9757d3bb01d2
+
+
+###
+POST {{ URL }}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"eren bekman",
+    "email":"eren@test.com",
+    "password":"12345"
+}
+
+###
+POST {{ URL }}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"kerem arslan",
+    "email":"kerem@test.com",
+    "password":"12345"
+}
+###
+POST {{ URL }}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"onur sevinc",
+    "email":"onur@test.com",
+    "password":"12345"
+}
+###
+POST {{ URL }}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"ahmet aydin",
+    "email":"ahmet@test.com",
+    "password":"12345"
+}
+###
+POST {{ URL }}/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"eren@test.com",
+    "password":"12345"
+}
